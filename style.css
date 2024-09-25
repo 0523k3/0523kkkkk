@@ -1,0 +1,340 @@
+*{
+  margin: 0; /*바깥쪽 여백 : 0*/
+  padding: 0; /*안쪽 여백 : 0*/
+  box-sizing: border-box; /*테두리 두께 무시*/
+
+  
+  
+}
+
+html{
+  scroll-behavior: smooth;
+
+
+}
+
+
+
+a{
+  display: block; /*a태그를 블록 요소로 변경*/
+  text-decoration: none; /*밑줄 제거*/
+  color: black; /*글자색 : black*/
+}
+li{
+  list-style-type: none; /*li태그 기호 제거*/
+}
+
+.container{
+  width: 100%;
+  height: 1200px;
+
+  background: linear-gradient( rgba(0,0,0,0.8)  ,  rgba(0,0,0,0.8)  )  ,url(bg.jpg) no-repeat;
+  background-size: cover;
+
+  color: white;
+}
+.header{
+  width: 100%;
+  height: 100px;
+
+  display: flex; /*자식요소들을 가로로 배치*/
+  justify-content: space-between; /*가로로 어떻게 배치할지 : space-between*/
+  align-items: center; /*세로로 어떻게 배치할지 : 가운데 정렬*/
+}
+.logo{
+  width: 200px;
+  height: 80px;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+
+}
+.menu{
+  width: 400px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+}
+.menu li{
+  width: 100px;
+  text-align: center;
+
+}
+.menu li a{
+
+  color: white;
+}
+
+
+
+
+.main{
+  width: 700px;
+  height: 500px;
+
+
+  margin: 0 auto;
+  margin-top: 200px;
+
+  text-align: center;
+}
+.main h1{
+  font-size: 40px;
+  margin-bottom: 50px;
+
+}
+.main h2{
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.main p{
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+.main button{
+  font-size: 30px;
+  width: 300px;
+  height: 100px;
+  border-radius: 30px;
+  background-color: transparent;
+
+  color: white;
+  border: 3px solid white;
+}
+.main button:hover{
+  background-color: white;
+  color: black;
+
+}
+
+.about{
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.about h2{
+  font-size: 30px;
+  color: #ff6a6a;
+}
+.about h1{
+  font-size: 50px;
+}
+.about .contents{
+  width: 1200px;
+  height: 500px;
+  display: flex;
+}
+.about .left{
+  width: 400px;
+  height: 500px;
+}
+
+.about .left img{
+  width: 400px;
+  height: 500px;
+}
+.about .right{
+  width: 800px;
+  height: 500px;
+  padding-left: 10px;
+
+}
+.about .right h3{
+  font-size: 22px;
+  color: #ff6a6a;
+}
+.about .right li{
+  font-size: 22px;
+  margin-top: 10px;
+}
+.fa-brands{
+  font-size: 50px;
+  margin-right: 10px;
+}
+.fa-youtube{
+  color: red;
+}
+.fa-facebook{
+  color: #3b5998;
+}
+
+.skills{
+  /* width: 100%; */
+  height: 800px;
+  background-color: #eee;
+}
+.skills-inner{
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+
+  padding-top: 100px;
+
+}
+.skills h2{
+  font-size: 30px;
+  color: #ff6a6a;
+}
+.skills h1{
+  font-size: 50px;
+}
+.skills .contents{
+  width: 1200px;
+  height: 400px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 50px;
+
+}
+.skills .contents li{
+  width: 350px;
+  height: 350px;
+  background-color: white;
+
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+
+  transition: 0.3s;
+}
+.skills h3{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.fa-keyboard{
+  font-size: 50px;
+}
+.skills li:hover{
+  background-color: #ff6a6a;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+.bg{
+  width: 100%;
+  height: 800px;
+
+  background: url(bg2.png) no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
+
+}
+.projects{
+  height: 1200px;
+
+}
+
+
+.contact{
+  width: 100%;
+  height: 800px;
+  margin-top: 100px;
+
+}
+.contact-inner{
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+
+}
+.contact h2{
+  font-size: 30px;
+  color: #ff6a6a;
+}
+.contact h1{
+  font-size: 50px;
+}
+.contact .contents{
+  width: 1200px;
+  height: 800px;
+  display: flex;
+}
+
+.contact .contents .left{
+  width: 400px;
+  height: 800px;
+
+}
+.contact .contents .right{
+  width: 800px;
+  height: 800px;
+  
+}
+.info{
+
+}
+.info li{
+  font-size: 23px;
+
+  border: 1px solid #ddd;
+  margin-top: 20px;
+
+  width: 350px;
+  height: 130px;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-top: 30px;
+}
+
+.contact .right h5{
+  font-weight: normal;
+
+  margin-top: 30px;
+}
+.contact .right input{
+  width: 700px;
+  height: 30px;
+}
+
+.contact .right textarea{
+  width: 700px;
+  height: 300px;
+}
+.contact .right button{
+  width: 700px;
+  height: 30px;
+  background-color: orange;
+  color: white;
+
+  margin-top: 20px;
+  border: none;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
